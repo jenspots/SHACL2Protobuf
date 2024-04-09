@@ -41,13 +41,13 @@
     sh:minCount 1 ;
     sh:maxCount 1 ;
  ], [
-    sh:path <data> ;
-    sh:class <b> ;
+    sh:path <b> ;
+    sh:class <Coordinate> ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
  ], [
-    sh:path <data> ;
-    sh:class <c> ;
+    sh:path <c> ;
+    sh:class <Coordinate> ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
  ].

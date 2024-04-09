@@ -1,0 +1,17 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+SELECT *
+
+WHERE {
+    ?shape
+      a sh:NodeShape ;
+      sh:targetClass ?target ;
+      sh:property ?property .
+
+    ?property sh:path ?path .
+
+    OPTIONAL { ?property sh:minCount ?minCount }.
+    OPTIONAL { ?property sh:maxCount ?maxCount }.
+    OPTIONAL { ?property sh:datatype ?datatype } .
+    OPTIONAL { ?property sh:class ?class } .
+}

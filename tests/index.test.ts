@@ -1,9 +1,14 @@
-import { greet } from "../src";
 import { expect, describe, test } from "vitest";
+import {Generator} from "../src";
+import * as fs from "fs";
+
+const shacl = fs.readFileSync("./tests/resources/shapes.ttl").toString();
+const protobuf = fs.readFileSync("./tests/resources/shapes.proto").toString();
 
 describe("log", () => {
     test("successful", async () => {
-        expect.assertions(1);
-        expect(greet("World")).toBe("Hello, World!");
+        // Call generator.
+        const result = await Generator.exec(shacl);
+        expect(result.trim()).toBe(protobuf.trim());
     });
 });
