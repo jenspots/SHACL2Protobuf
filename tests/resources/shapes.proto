@@ -1,0 +1,14 @@
+message Coordinate {
+    required float x = 1;
+    required float y = 2;
+}
+
+message Points {
+    repeated Coordinate data = 1;
+}
+
+message Triangle {
+    required Coordinate a = 1;
+    required Coordinate b = 2;
+    required Coordinate c = 3;
+}

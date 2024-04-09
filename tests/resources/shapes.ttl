@@ -1,0 +1,53 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[ ]
+  a sh:NodeShape ;
+  sh:targetClass <Coordinate> ;
+  sh:closed true ;
+  sh:ignoredProperties (rdf:type) ;
+  sh:property [
+    sh:path <x> ;
+    sh:datatype xsd:float ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ], [
+    sh:path <y> ;
+    sh:datatype xsd:float ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ].
+
+[ ]
+  a sh:NodeShape ;
+  sh:targetClass <Points> ;
+  sh:closed true ;
+  sh:ignoredProperties (rdf:type) ;
+  sh:property [
+    sh:path <data> ;
+    sh:class <Coordinate> ;
+    sh:minCount 0 ;
+ ].
+
+[ ]
+  a sh:NodeShape ;
+  sh:targetClass <Triangle> ;
+  sh:closed true ;
+  sh:ignoredProperties (rdf:type) ;
+  sh:property [
+    sh:path <a> ;
+    sh:class <Coordinate> ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+ ], [
+    sh:path <data> ;
+    sh:class <b> ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+ ], [
+    sh:path <data> ;
+    sh:class <c> ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+ ].
