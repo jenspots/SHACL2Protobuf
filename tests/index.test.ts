@@ -1,5 +1,5 @@
 import { expect, describe, test } from "vitest";
-import {Generator} from "../src";
+import { Generator } from "../src";
 import * as fs from "fs";
 
 const shacl = fs.readFileSync("./tests/resources/shapes.ttl").toString();

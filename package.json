@@ -1,45 +1,45 @@
 {
-  "name": "@jenspots/shacl-protobuf",
-  "version": "0.0.0",
-  "description": "Generate Protobuf schemas using SHACL models.",
-  "type": "module",
-  "main": "lib/index.js",
-  "files": [
-    "lib/**/*"
-  ],
-  "scripts": {
-    "build": "tsc && tsc-alias",
-    "test": "vitest run --coverage --coverage.include src",
-    "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jenspots/shacl-protobuf"
-  },
-  "author": "Jens Pots",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/rdf-ext": "^2.5.0",
-    "@types/sparqljs": "^3.1.10",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.4.0",
-    "@vitest/coverage-v8": "^1.4.0",
-    "dotenv": "^16.4.5",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "ts-node": "^10.9.2",
-    "tsc-alias": "^1.8.8",
-    "typescript": "^5.4.3",
-    "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^1.4.0"
-  },
-  "dependencies": {
-    "@comunica/query-sparql-rdfjs": "^3.0.1",
-    "n3": "^1.17.3",
-    "rdf-ext": "^2.5.1",
-    "sparqljs": "^3.7.1"
-  }
+    "name": "@jenspots/shacl-protobuf",
+    "version": "0.0.0",
+    "description": "Generate Protobuf schemas using SHACL models.",
+    "type": "module",
+    "main": "lib/index.js",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "build": "tsc && tsc-alias",
+        "test": "vitest run --coverage --coverage.include src",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jenspots/shacl-protobuf"
+    },
+    "author": "Jens Pots",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/rdf-ext": "^2.5.0",
+        "@types/sparqljs": "^3.1.10",
+        "@typescript-eslint/eslint-plugin": "^7.5.0",
+        "@typescript-eslint/parser": "^7.4.0",
+        "@vitest/coverage-v8": "^1.4.0",
+        "dotenv": "^16.4.5",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.8",
+        "typescript": "^5.4.3",
+        "vite-tsconfig-paths": "^4.3.2",
+        "vitest": "^1.4.0"
+    },
+    "dependencies": {
+        "@comunica/query-sparql-rdfjs": "^3.0.1",
+        "n3": "^1.17.3",
+        "rdf-ext": "^2.5.1",
+        "sparqljs": "^3.7.1"
+    }
 }

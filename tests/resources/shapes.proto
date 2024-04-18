@@ -1,6 +1,8 @@
+syntax = "proto3";
+
 message Coordinate {
-    required float x = 1;
-    required float y = 2;
+    float x = 1;
+    float y = 2;
 }
 
 message Points {
@@ -8,7 +10,7 @@ message Points {
 }
 
 message Triangle {
-    required Coordinate a = 1;
-    required Coordinate b = 2;
-    required Coordinate c = 3;
+    Coordinate a = 1;
+    Coordinate b = 2;
+    Coordinate c = 3;
 }
